@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Points With Marks",
+    "version": "1.0",
+    "description": " An extremely simple extension to display points in one table with normal marks in Librus.",
+    "content_scripts": [
+		{
+			"matches": [ "*://synergia.librus.pl/przegladaj_oceny/*" ],
+			"js": [ "oneTable.js" ]
+		}
+	]
+  }
+  
