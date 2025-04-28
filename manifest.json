@@ -3,6 +3,11 @@
     "name": "Points With Marks",
     "version": "1.0",
     "description": " An extremely simple extension to display points in one table with normal marks in Librus.",
+	"browser_specific_settings": {
+		"gecko": {
+	    	"id": "pointswithmarks@hexhyperion"
+	  	}
+	},
     "content_scripts": [
 		{
 			"matches": [ "*://synergia.librus.pl/przegladaj_oceny/*" ],
