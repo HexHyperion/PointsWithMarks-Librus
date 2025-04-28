@@ -40,13 +40,13 @@ window.onload = () => {
 
     // Append the points to the marks table
     markTableRows.forEach((row, index) => {
+        if (row.children[2].textContent == "Brak ocen") row.children[2].textContent = null;
+        if (row.children[6].textContent == "Brak ocen") row.children[6].textContent = null;
+        
         pointsFirstSem.get(row.children[1].textContent).forEach((mark, i) => {
-            if (row.children[2].textContent == "Brak ocen") row.children[2].textContent = null;
             row.children[2].appendChild(mark);
         });
-
         pointsSecondSem.get(row.children[1].textContent).forEach((mark, i) => {
-            if (row.children[6].textContent == "Brak ocen") row.children[6].textContent = null;
             row.children[6].appendChild(mark);
         });
     });
